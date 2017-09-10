@@ -1,0 +1,223 @@
+body a {
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+  text-align: center;
+}
+h1,
+p {
+  text-align: center;
+}
+ul li {
+  list-style: none;
+}
+body a:hover {
+  text-decoration: none;
+}
+div {
+  padding: 0;
+}
+.lb {
+  height: 200px;
+}
+.bd {
+  border-bottom: 1px solid #606060;
+  line-height: 30px;
+}
+header .container .ul_mar_cle {
+  margin-bottom: 0;
+}
+#nav #menu ul li {
+  padding: 8px 15px 0;
+  text-align: left;
+}
+#nav #menu ul li a {
+  padding: 0;
+}
+#nav #menu ul li a p {
+  margin: 0;
+}
+#nav #menu ul li:hover {
+  background: -webkit-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -moz-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -o-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#f8f8f8));
+  background: linear-gradient(left, #000, #f8f8f8 100%);
+}
+#nav #menu ul li:hover a {
+  color: #fff;
+}
+#nav #menu ul li:nth-child(4) {
+  background: -webkit-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -moz-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -o-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#f8f8f8));
+  background: linear-gradient(left, #000, #f8f8f8 100%);
+}
+#nav #menu ul li:nth-child(4) a {
+  color: #fff;
+}
+section h2 {
+  font-family: "宋体";
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  color: #;
+}
+section .floor_p {
+  font-size: 26px;
+  color: #602625;
+  font-weight: bold;
+}
+#floor1 {
+  margin-top: 30px;
+}
+#floor1 p {
+  text-align: center;
+}
+#floor1 .floor1_img {
+  position: relative;
+}
+#floor1 .floor1_img img:nth-child(1) {
+  padding-right: 5px;
+  width: 29%;
+}
+#floor1 .floor1_img img:nth-child(2) {
+  float: right;
+  width: 71%;
+}
+#floor1 .floor1_img img:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 86px;
+  width: 71%;
+}
+#floor1 .floor1_img img:nth-child(4) {
+  width: 52%;
+  margin-top: 3px;
+}
+#floor2 {
+  margin-top: 75px;
+}
+#floor2 .honor div {
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+#floor2 .honor div h4 {
+  color: #3E3A39;
+}
+#floor2 .honor div p {
+  color: #A5A4A2;
+  font-size: 12px;
+}
+#floor3 {
+  margin-top: 75px;
+}
+#floor3 h4 {
+  color: #5D2727;
+  font-size: 25px;
+  border-bottom: 2px solid #5D2727;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+#floor3 .txte_right {
+  text-align: right;
+}
+#floor3 .txte_right P {
+  text-align: right;
+  padding-right: 15px;
+}
+#floor3 .txte_left p {
+  text-align: left;
+  padding-left: 15px;
+}
+#floor3 img {
+  width: 100%;
+  cursor: pointer;
+}
+#floor4 {
+  margin-top: 75px;
+  text-align: center;
+}
+#floor4 .pdbt {
+  padding-bottom: 10px;
+}
+#floor4 .f4_w h2 {
+  font-size: 34px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+#floor4 .f4_w p {
+  font-size: 16px;
+  width: 70%;
+  margin: auto;
+  color: #5D2727;
+}
+#floor4 img {
+  padding: 3px;
+  background: #eee;
+  border: 2px solid #602625;
+}
+#floor4 .nub {
+  width: 15%;
+}
+#floor4 .team1 h3 {
+  display: inline-block;
+}
+footer {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: url(../img/footer_img.jpg) no-repeat;
+}
+footer #footer {
+  padding-top: 50px;
+  color: #EEEEEE;
+}
+footer #footer h1 {
+  font-size: 55px;
+}
+footer #footer h2 {
+  text-align: center;
+}
+footer #footer a {
+  display: block;
+  font-size: 18px;
+  width: 25%;
+  margin: auto;
+  border: 2px solid #ADADAD;
+  border-radius: 5px;
+  padding: 5px;
+  color: #A0A0A0;
+}
+footer #footer .fo_mid ul {
+  text-align: center;
+  width: 26%;
+  margin: auto;
+}
+footer #footer .fo_mid ul li {
+  float: left;
+  padding: 10px;
+  font-size: 18px;
+}
+footer #footer .fo_mid ul li:nth-child(3) :after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#foot_about ul {
+  width: 57%;
+  border: 1px solid #000000;
+  margin: auto;
+}
+#foot_about ul li {
+  float: left;
+  padding: 5px;
+}
+#foot_about ul li a {
+  color: #EEEEEE;
+}
+#foot_about ul li a:hover {
+  color: #337ab7;
+}

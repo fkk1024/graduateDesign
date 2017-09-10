@@ -1,0 +1,286 @@
+//全局样式
+body a {
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    text-align: center;
+}
+h1,
+p {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+body a:hover {
+    text-decoration: none;
+}
+div {
+    padding: 0;
+}
+//轮播图
+.lb {
+    height: 200px;
+}
+.bd {
+    border-bottom: 1px solid #606060;
+    line-height: 30px;
+}
+header {
+    .container {
+        .ul_mar_cle {
+            margin-bottom: 0;
+        }
+    }
+}
+#nav {
+    #menu {
+        ul {
+            li {
+                padding: 8px 15px 0;
+                text-align: left;
+                a {
+                    padding: 0;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+#nav #menu ul li:hover {
+    a {
+
+        color: #fff;
+    }
+    background: -webkit-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -moz-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -o-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#f8f8f8));
+    background: linear-gradient(left, #000, #f8f8f8 100%);
+}
+#nav #menu ul li:nth-child(1) {
+    a {
+
+        color: #fff;
+    }
+    background: -webkit-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -moz-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -o-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#f8f8f8));
+    background: linear-gradient(left, #000, #f8f8f8 100%);
+}
+#floor {
+    p {
+        background: url("../img/index/newTitle.png") no-repeat;
+        background-size: 300px;
+        font-size: 20px;
+        color: #7E7E81;
+        background-position: center;
+    }
+    h1 {
+        height: 85px;
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    div {
+        padding: 0 5px;
+    }
+    #floor1{
+        border: 5px solid #eee;
+        background: #eee;
+        div{
+            padding: 5px;
+            float: left;
+            a{
+                float: left;
+            }
+            a img{
+                transform-style: preserve-3d;
+                transition: all 0.5s;
+                transform: scale(0.9);
+                box-shadow: 0 0 15px #EC73DF;
+            }
+            a:hover img{
+                transform:translate3d(0 ,0,50px);
+                transform: scale(1.1);
+            }
+        }
+    }
+    #floor3 {
+        margin-top: 5%;
+        .hei {
+            height: 100%;
+        }
+        #banner_tabs {
+            box-sizing: border-box;
+            height: 100%;
+            margin-bottom: 25%;
+        }
+        .four_img {
+            margin-top: 2%;
+        }
+    }
+    #floor4 {
+        .mgtop {
+            div {
+                margin-top: 1%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+#wrap > img.left {
+    transform: rotateY(45deg) translateZ(-100px);
+}
+#wrap > img.middle {
+    transform: translateZ(100px);
+}
+#wrap > img.right {
+    transform: rotateY(-45deg) translateZ(-100px);
+}
+#wrap {
+    margin-top: 3%;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    img {
+        position: absolute;
+        width: 350px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #EC73DF;
+        -webkit-box-reflect: below 15px linear-gradient(to top,rgba(0,0,0,1) 0%,/*transparent*/rgba(0,0,0,0.5) 10%,rgba(0,0,0,0) 50%);
+        transition: 1s;
+    }
+}
+#goTop {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background: url("../img/toTop.png") no-repeat -36px 2px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#goTop:hover{
+    background: url("../img/toTop.png") no-repeat 2px 2px;
+}
+.rea {
+    position: relative;
+}
+#floor .rea:hover .abs {
+    background: #000000;
+    opacity: 0.3;
+    padding: 0;
+    border-radius: 5px;
+    a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        img {
+            display: block;
+            width: 50px;
+            margin-top: -50%;
+            margin-left: -50%;
+        }
+    }
+
+}
+#floor .abs {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    a {
+        img {
+            display: none;
+        }
+    }
+}
+footer {
+    position: relative;
+    color: #C2C0C0;
+    text-align: center;
+    div {
+        box-sizing: border-box;
+        margin-top: 2%;
+        h1 {
+            padding-top: 5%;
+            padding-bottom: 1%;
+            font-size: 55px;
+        }
+        img {
+            width: 100%;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        a {
+            display: block;
+            height: 45px;
+            color: #C2C0C0;
+            font-size: 20px;
+            line-height: 45px;
+            width: 335px;
+            border-radius: 10px;
+            margin: auto;
+            border: 1px solid #E1E1E1;
+            :hover {
+                color: #fff;
+            }
+        }
+        div {
+            ul {
+                display: block;
+                width: 40%;
+                margin: auto;
+                border: 1px solid #000000;
+                li {
+                    float: left;
+                    padding: 5%;
+                    font-size: 20px;
+                    text-align: center;
+                    padding-top: 5%;
+                }
+            }
+        }
+    }
+    #foot_about {
+        margin-top: 1%;
+        background: #232323;
+        color: #C9C6C6;
+        ul {
+            display: block;
+            width: 80%;
+            margin: auto;
+            border: none;
+            li {
+                float: left;
+                padding: 0;
+                margin: 0;
+                width: 80px;
+                a {
+                    height: 100px;
+                    line-height: 100px;
+                    font-size: 12px;
+                    display: block;
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
+    }
+}

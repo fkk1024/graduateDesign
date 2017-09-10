@@ -1,0 +1,237 @@
+body a {
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+  text-align: center;
+}
+h1,
+p {
+  text-align: center;
+}
+ul li {
+  list-style: none;
+}
+body a:hover {
+  text-decoration: none;
+}
+div {
+  padding: 0;
+}
+.lb {
+  height: 200px;
+}
+.bd {
+  border-bottom: 1px solid #606060;
+  line-height: 30px;
+}
+header .container .ul_mar_cle {
+  margin-bottom: 0;
+}
+#nav #menu ul li {
+  padding: 8px 15px 0;
+  text-align: left;
+}
+#nav #menu ul li a {
+  padding: 0;
+}
+#nav #menu ul li a p {
+  margin: 0;
+}
+#nav #menu ul li:hover {
+  background: -webkit-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -moz-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -o-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#f8f8f8));
+  background: linear-gradient(left, #000, #f8f8f8 100%);
+}
+#nav #menu ul li:hover a {
+  color: #fff;
+}
+#nav #menu ul li:nth-child(5) {
+  background: -webkit-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -moz-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -o-linear-gradient(left, #000, #f8f8f8 100%);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#f8f8f8));
+  background: linear-gradient(left, #000, #f8f8f8 100%);
+}
+#nav #menu ul li:nth-child(5) a {
+  color: #fff;
+}
+#web_add {
+  height: 30px;
+  width: 97%;
+  line-height: 30px;
+  background: #eee;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: none;
+}
+#yhhd p {
+  text-align: left;
+}
+#yhhd .col-sm-6 {
+  border-bottom: 1px solid #000000;
+  padding: 0 5px 20px 5px;
+  margin: 15px 0;
+}
+#yhhd .clo8 {
+  width: 69%;
+  display: inline-block;
+}
+#yhhd .clo4 {
+  width: 30%;
+  display: inline-block;
+}
+#yhhd .clo4 span {
+  display: inline-block;
+  padding: 10px 0;
+}
+#yhhd .clo4 span:nth-child(2) {
+  background: #C71C60;
+  height: 20px;
+  width: 15px;
+  border-radius: 3px;
+  color: #FFF;
+  text-align: center;
+  padding: 0;
+}
+#yhhd .clo4 span:nth-child(4) {
+  background: #C71C60;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  color: #FFF;
+  text-align: center;
+  padding: 0;
+}
+#yhhd .clo4 span:nth-child(6) {
+  background: #C71C60;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  color: #FFF;
+  text-align: center;
+  padding: 0;
+}
+#yhhd .clo4 span:nth-child(7) {
+  padding-left: 5px;
+}
+#yhhd .clo4 span:nth-child(8) {
+  background: #C71C60;
+  display: block;
+}
+#yhhd .clo4 span:nth-child(8) a {
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+}
+#yhhd .po_re {
+  position: relative;
+}
+#yhhd .po_re img {
+  width: 100%;
+  cursor: pointer;
+}
+#yhhd .po_re .act_end {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+}
+#yhhd .po_ab {
+  position: absolute;
+  height: 40px;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  z-index: 55;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+#yhhd .opac {
+  position: absolute;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 5;
+}
+#yhhd .end_act span:nth-child(1) {
+  display: block;
+  text-align: center;
+  color: #5E5E5E;
+}
+#yhhd .end_act span:nth-child(2) {
+  display: block;
+  width: 100%;
+  background: #5e5e5e;
+  height: 45px;
+}
+#yhhd .end_act span:nth-child(2) a {
+  display: block;
+  width: 100%;
+  color: #eee;
+  height: 45px;
+  line-height: 45px;
+}
+footer {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background: url(../img/footer_img.jpg) no-repeat;
+}
+footer #footer {
+  padding-top: 50px;
+  color: #EEEEEE;
+}
+footer #footer h1 {
+  font-size: 55px;
+}
+footer #footer h2 {
+  text-align: center;
+}
+footer #footer a {
+  display: block;
+  font-size: 18px;
+  width: 25%;
+  margin: auto;
+  border: 2px solid #ADADAD;
+  border-radius: 5px;
+  padding: 5px;
+  color: #A0A0A0;
+}
+footer #footer .fo_mid ul {
+  text-align: center;
+  width: 26%;
+  margin: auto;
+}
+footer #footer .fo_mid ul li {
+  float: left;
+  padding: 10px;
+  font-size: 18px;
+}
+footer #footer .fo_mid ul li:nth-child(3) :after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#foot_about ul {
+  width: 57%;
+  border: 1px solid #000000;
+  margin: auto;
+}
+#foot_about ul li {
+  float: left;
+  padding: 5px;
+}
+#foot_about ul li a {
+  color: #EEEEEE;
+}
+#foot_about ul li a:hover {
+  color: #337ab7;
+}

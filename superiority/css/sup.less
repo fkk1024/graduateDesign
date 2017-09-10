@@ -1,0 +1,263 @@
+//全局样式
+body a {
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    text-align: center;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+div {
+    padding: 0;
+}
+
+//轮播图
+.lb {
+    height: 200px;
+}
+
+.bd {
+    border-bottom: 1px solid #606060;
+    line-height: 30px;
+}
+
+header {
+    .container {
+        .ul_mar_cle {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#nav {
+    #menu {
+        ul {
+            li {
+                padding: 8px 15px 0;
+                text-align: left;
+                a {
+                    padding: 0;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#nav #menu ul li:hover {
+    a {
+        color: #fff;
+    }
+    background: -webkit-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -moz-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -o-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#f8f8f8));
+    background: linear-gradient(left, #000, #f8f8f8 100%);
+}
+#nav #menu ul li:nth-child(4){
+    a {
+        color: #fff;
+    }
+    background: -webkit-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -moz-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -o-linear-gradient(left, #000, #f8f8f8 100%);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(#f8f8f8));
+    background: linear-gradient(left, #000, #f8f8f8 100%);
+}
+
+section {
+    h2 {
+        font-family: "宋体";
+        font-weight: 100;
+        font-size: 50px;
+        text-align: center;
+        color: #;
+    }
+    .floor_p {
+        font-size: 26px;
+        color: #602625;
+        font-weight: bold;
+    }
+}
+
+#floor1 {
+    margin-top: 30px;
+    p {
+        text-align: center;
+    }
+    .floor1_img {
+        position: relative;
+        img:nth-child(1) {
+            padding-right: 5px;
+            width: 29%;
+        }
+        img:nth-child(2) {
+            float: right;
+            width: 71%;
+        }
+        img:nth-child(3) {
+            position: absolute;
+            right: 0;
+            top: 86px;
+            width: 71%;
+        }
+        img:nth-child(4) {
+            width: 52%;
+            margin-top: 3px;
+        }
+    }
+}
+
+#floor2 {
+    margin-top: 75px;
+    .honor {
+        div {
+            padding: 5px 0 5px 0;
+            text-align: center;
+            h4 {
+                color: #3E3A39;
+            }
+            p {
+                color: #A5A4A2;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+#floor3 {
+    margin-top: 75px;
+    h4 {
+        color: #5D2727;
+        font-size: 25px;
+        border-bottom: 2px solid #5D2727;
+        padding-bottom: 5px;
+        padding-right: 20px;
+    }
+    .txte_right {
+        text-align: right;
+        P {
+            text-align: right;
+            padding-right: 15px;
+        }
+    }
+    .txte_left {
+        p {
+            text-align: left;
+            padding-left: 15px;
+        }
+    }
+    img {
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+#floor4 {
+    margin-top: 75px;
+    text-align: center;
+    .pdbt{
+        padding-bottom: 10px;
+    }
+    .f4_w {
+        h2 {
+            font-size: 34px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 16px;
+            width: 70%;
+            margin: auto;
+            color: #5D2727;
+        }
+    }
+    img {
+        padding: 3px;
+        background:#eee;
+        border: 2px solid #602625;
+    }
+    .nub {
+        width: 15%;
+    }
+    .team1 {
+        h3 {
+            display: inline-block;
+        }
+    }
+}
+footer{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background: url(../img/footer_img.jpg) no-repeat;
+    #footer{
+        padding-top: 50px;
+        color: #EEEEEE;
+        h1{
+            font-size: 55px;
+        }
+        h2{
+            text-align: center;
+        }
+        a{
+            display: block;
+            font-size: 18px;
+            width: 25%;
+            margin: auto;
+            border: 2px solid #ADADAD;
+            border-radius: 5px;
+            padding: 5px;
+            color: #A0A0A0;
+        }
+        .fo_mid{
+            ul{
+                text-align: center;
+                width: 26%;
+                margin: auto;
+                li{
+                    float: left;
+                    padding: 10px;
+                    font-size: 18px;
+                }
+                li:nth-child(3) :after{
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+#foot_about{
+    ul{
+        width: 57%;
+        border: 1px solid #000000;
+        margin: auto;
+        li{
+            float: left;
+            padding: 5px;
+            a{
+                color: #EEEEEE;
+            }
+            a:hover{
+                color: #337ab7;
+            }
+        }
+    }
+}

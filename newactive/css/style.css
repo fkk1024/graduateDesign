@@ -1,0 +1,701 @@
+/* 通用样式 */
+body {
+  font-family: tahoma, arial, sans-serif;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+  /*css重写*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+input {
+  border: 0;
+}
+.lf {
+  float: left;
+}
+/*浮动*/
+.rf {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+img {
+  vertical-align: bottom;
+}
+/*解决底部3个像素*/
+i {
+  font-style: normal;
+}
+a {
+  color: #444444;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/*.dt-nav:hover i{*/
+/*transform: rotateZ(-180deg);*/
+/*}*/
+/*弹出框*/
+/**/
+/*页面主体*/
+#content {
+  margin-top: 100px;
+  width: 100%;
+}
+/*左边的轮播广告*/
+.dt-slide {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  /*width:712px;*/
+  /*height:445px;*/
+}
+/*媒体查询*/
+/*@media screen and (max-width: 1262px){*/
+/*.dt-slide{*/
+/*width:468px;*/
+/*height:293px;*/
+/*}*/
+/*}*/
+@media screen and (min-width: 1200px) {
+  .dt-slide {
+    width: 60%;
+    /*height:445px;*/
+  }
+  .dt-slide img {
+    width: 100%;
+  }
+  .dt-hot {
+    width: 40%;
+  }
+}
+/*pc*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .dt-slide {
+    width: 50%;
+    /*height:293px;*/
+  }
+  .dt-slide img {
+    width: 100%;
+  }
+  .dt-hot {
+    width: 50%;
+  }
+  .dt-app {
+    display: none;
+  }
+}
+/*平板*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .dt-slide {
+    width: 100%;
+    /*height:470px;*/
+  }
+  .dt-slide img {
+    width: 100%;
+  }
+  .dt-hot {
+    width: 100%;
+  }
+  .dt-app {
+    display: none!important;
+  }
+}
+/*手机下*/
+@media screen and (max-width: 767px) {
+  .dt-slide {
+    width: 100%;
+    /*height:470px;*/
+  }
+  .dt-slide img {
+    width: 100%;
+  }
+  .dt-hot {
+    width: 100%;
+  }
+  .dt-app {
+    display: none!important;
+  }
+}
+/*右边的社区热点*/
+/*边框*/
+.dt-comm {
+  /*height:445px;*/
+  padding: 12px 32px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+/*上方的文字*/
+.dt-hot h3 {
+  height: 36px;
+  padding-top: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #ebebeb;
+}
+.dt-hot .dt-tags {
+  height: 68px;
+  margin-left: -16px;
+  padding: 16px 0 0;
+}
+.dt-hot .dt-tags .dt-span-sline .dt-tag a:hover {
+  text-decoration: initial;
+}
+.dt-hot .dt-span-sline {
+  width: 442px;
+}
+/*冬天等文字*/
+.dt-tag {
+  display: inline-block;
+  padding: 0 20px 0 16px;
+  background-image: url(../img/big-bg.png);
+  background-position: right 8px;
+}
+/*超连接样式*/
+.dt-hot a {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.dt-hot a:hover {
+  color: #444444;
+}
+.dt-tag a {
+  margin-top: 5px;
+}
+/*活动 精选*/
+/*线背景*/
+.dt-hot .dt-span {
+  height: 35px;
+  padding: 16px 0 35px;
+  background: url(../img/line-bg.png) repeat-x;
+}
+.dt-hot .dt-span a {
+  line-height: 20px;
+}
+/*活动背景*/
+.dt-label {
+  padding: 0 3px;
+  border-radius: 2px;
+  color: #fff;
+  margin-left: 5px;
+}
+.event {
+  background-color: #fb3;
+}
+.choice {
+  background-color: #f46;
+}
+.dt-hot .dt-span .dt-label:hover {
+  text-decoration: none;
+}
+/*收徒小助手*/
+/*app下载*/
+.dt-app {
+  /*display: block;*/
+  height: 116px;
+  margin-top: 20px;
+  background: #ffffff;
+  text-align: center;
+  border: 1px solid #dedfe0;
+}
+/*图片*/
+.dt-app a {
+  display: block;
+  height: 100%;
+  text-indent: -9999px;
+  background: url(../img/dangqi.png) center bottom no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/*++++++++++++++++++++++++++++++++++++++++++中间+++++++++++++++++++++++*/
+.dt-block {
+  margin-top: 40px;
+  padding: 0;
+  border-top: 1px solid #d4d5d5;
+}
+/*+++++++++++++++++++++++++++往期回顾 +++++++++++++++++++++++++++*/
+.review {
+  margin-top: 28px;
+  margin-left: 12px;
+}
+.review a.btn-primary {
+  padding: 3px 12px;
+  background: #22B4F6;
+  border-color: #22B4F6;
+}
+/*专辑精选*/
+.dt-center h2 {
+  padding: 30px 0;
+  font-size: 18px;
+  color: #444;
+}
+/*图片*/
+.a-img {
+  text-align: center;
+  position: relative;
+}
+/*图片遮罩层*/
+.a-img .a-img-cover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.a-img-cover:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.a-img img {
+  max-width: 100%;
+}
+.thumbnail {
+  padding: 0;
+}
+.dt-center .thumbnail .section-title {
+  display: block;
+  color: #444444;
+  height: 34px;
+  /*padding:0 10px;*/
+  font-size: 13px;
+  font-weight: 700;
+}
+.dt-center .thumbnail .section-attr {
+  height: 34px;
+  font-size: 12px;
+  color: #888888;
+}
+.dt-center .thumbnail .dt-username {
+  color: #888888;
+}
+/*+++++++++++++++++++++单品推荐+++++++++++++++++++++++++++++*/
+.pg-tmentry {
+  margin-top: 34px;
+}
+.pg-tmentry a {
+  padding: 0 12px;
+  background: url(../img/big-bg.png) right 2px no-repeat;
+}
+/*按钮*/
+p.member .btn {
+  padding: 3px 10px;
+}
+p.member {
+  height: 30px;
+  line-height: 30px;
+  color: #888888;
+}
+/*+++++++++++++++++++++++++++达人推荐++++++++++++++++++++++++++*/
+.daren-img {
+  /*position: relative;*/
+  text-align: center;
+}
+.thumbnail > .daren-bkg {
+  display: block;
+  width: 100%;
+  height: 112px;
+  cursor: pointer;
+}
+/*遮罩层*/
+.daren-img-cover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 112px;
+  cursor: pointer;
+}
+/*头像*/
+.daren-avatar {
+  position: absolute;
+  top: 68px;
+  left: 35%;
+  width: 80px;
+  height: 80px;
+  border: 4px solid #FFFFFF;
+  border-radius: 80px;
+  cursor: pointer;
+}
+/*!*vip小图标*!*/
+/*.thumbnail a>.daren-avatar-vip{*/
+/*position:relative;*/
+/*margin:0;*/
+/*z-index: 1000;*/
+/*left:60%;*/
+/*}*/
+/*下面的描述*/
+.daren-desc {
+  width: 100%;
+  height: 138px;
+  text-align: center;
+  border-left: 1px solid #dedfe0;
+  border-right: 1px solid #dedfe0;
+  border-bottom: 3px solid #E3E4E5;
+}
+.daren-desc .daren-title {
+  display: block;
+  color: #444;
+  padding-top: 52px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+/*人数+擅长领域*/
+.daren-count,
+.daren-expertise {
+  font-size: 13px;
+  text-align: center;
+  color: #888;
+}
+.daren-count {
+  height: 16px;
+  overflow: hidden;
+  margin: 4px auto 0;
+}
+/*星星图标*/
+.daren-star {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/total.png) -4px -52px no-repeat;
+}
+.daren-total {
+  vertical-align: top;
+  line-height: 16px;
+}
+/*擅长领域*/
+.daren-expertise {
+  margin-top: 12px;
+}
+.daren-expertise b {
+  font-weight: 400;
+  color: #444444;
+}
+/*++++++++++++++++++++++++++++++++瀑布流+++++++++++++++++++++++++++*/
+/*收集*/
+#pubu {
+  padding-bottom: 100px;
+}
+.fall-collect {
+  overflow: hidden;
+  padding: 0 12px;
+  margin-bottom: 10px;
+  border-bottom: none;
+}
+/*大图描述*/
+.mbpho-img {
+  max-width: 100%;
+}
+/*文字描述*/
+.writing {
+  clear: both;
+  overflow: hidden;
+  padding: 10px 12px;
+  margin: 0;
+  color: #444;
+}
+.fall-collect span {
+  line-height: 19px;
+  padding: 0 0 0 16px;
+  margin: 0 8px 0 0;
+  background: url(../img/total.png) no-repeat;
+  font-size: 13px;
+  color: #a0a0a0;
+}
+.fall-collect .collect1 {
+  background-position: -5px -50px;
+}
+.fall-collect .collect2 {
+  background-position: -90px -50px;
+}
+/*用户*/
+.ul-user {
+  zoom: 1;
+  display: block;
+  padding: 0 0 8px;
+}
+.li-user {
+  zoom: 1;
+  padding: 8px 11px 7px;
+  border-top: 1px solid #f0f0f0;
+}
+.li-user a {
+  color: #666;
+}
+/*用户图片*/
+.li-user a img {
+  float: left;
+  margin: 0 8px 0 0;
+  border-radius: 26px;
+}
+/*收集框*/
+.mbpho {
+  text-align: center;
+}
+.collbtn {
+  width: 208px;
+  height: 44px;
+  margin: 0 auto;
+  z-index: 500;
+  background: url(../img/total.png) 0 -72px;
+  padding: 8px;
+  position: absolute;
+  top: 10px;
+  display: none;
+}
+.mbpho:hover .collbtn {
+  display: block;
+}
+/*收集文字框*/
+.collbtn .collection {
+  background-color: #ff4466;
+  background-position: 0 0;
+  float: left;
+  height: 30px;
+  text-align: right;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-decoration: none;
+  z-index: auto;
+  border-radius: 2px;
+}
+.collbtn i {
+  background: url(../img/total.png) no-repeat;
+}
+.collbtn .collection i {
+  float: left;
+  width: 24px;
+  height: 24px;
+  z-index: 600;
+  margin: 3px 0 3px 5px;
+  background-position: 0px 0px;
+}
+.collbtn .favour i {
+  display: block;
+  width: 26px;
+  height: 24px;
+  margin: 2px;
+  background-position: -24px 0;
+}
+.collbtn .discuss i {
+  display: block;
+  width: 26px;
+  height: 24px;
+  margin: 2px;
+  background-position: -48px 0px;
+}
+.collbtn .collection em {
+  float: left;
+  line-height: 16px;
+  height: 16px;
+  margin: 7px 8px 7px 0px;
+  font-style: normal;
+}
+/*灰色对话框*/
+.collbtn .btn {
+  padding: 0;
+  margin-left: 5px;
+  float: right;
+}
+/*媒体查询*/
+@media screen and (min-width: 1200px) {
+  .collbtn {
+    left: 45px;
+  }
+}
+/*pc*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .collbtn {
+    left: 22px;
+  }
+}
+/*平板*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .collbtn {
+    left: 92px;
+  }
+}
+/*手机下*/
+@media screen and (max-width: 767px) {
+  .collbtn {
+    display: none;
+  }
+}
+/*浏览更多*/
+.dt-browser {
+  text-align: center;
+}
+.dt-browser > a.btn-primary {
+  border: 0;
+  width: 120px;
+  background: #22B4F6;
+  border-radius: 0;
+}
+/*++++++++++++++++++++++++页尾++++++++++++++++++++++++++++*/
+#footer {
+  height: 225px;
+  border-top: 1px solid #d8d9da;
+  padding: 22px 0;
+  margin-top: 100px;
+}
+/*底部关于我们等*/
+.dt-footer-li {
+  float: left;
+  width: 280px;
+  height: 142px;
+  padding: 9px 32px;
+  border-left: 1px solid #cfd0d1;
+}
+.dt-footer-li h3 {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 15px;
+}
+/*a的样式*/
+.list-unstyle a {
+  float: left;
+  width: 100px;
+  height: 30px;
+  color: #666;
+  font-size: 13px;
+}
+/*+++++++++++++++++++++底部版权+++++++++++++++++++++*/
+.dt-copy {
+  margin: 20px auto 5px;
+  font-size: 13px;
+  color: #888;
+  height: 47px;
+  text-align: center;
+  line-height: 47px;
+}
+.dt-pic a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 36px;
+  margin-left: 10px;
+}
+/*图1*/
+.dt-footer-c1 a {
+  width: 128px;
+  background: url(../img/copy.png) -920px -490px no-repeat;
+}
+/*图2*/
+.dt-footer-c2 a {
+  width: 102px;
+  background: url(../img/copy.png) -798px -540px no-repeat;
+}
+/*图3*/
+.dt-footer-c3 a {
+  width: 113px;
+  background: url(../img/hugongwang.png) no-repeat;
+}
+/*++++++++++++++++++++++模态框+++++++++++++++++++++++*/
+.modal-header {
+  text-align: center;
+}
+.modal-body {
+  padding: 40px 0 40px 40px;
+}
+/*左边表单验证*/
+.modal-left form {
+  overflow: hidden;
+  padding: 0 32px 0 0;
+}
+.modal-left form input {
+  width: 250px;
+}
+/*登录框*/
+.modal-left form .btn-primary {
+  background: #22B4F6;
+  border: 0;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+/*合作账号*/
+.pg-reg {
+  margin-top: 22px;
+}
+.pg-reg a:not(:first-child) {
+  margin-left: 28px;
+}
+.pg-reg i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/hezuo.png);
+}
+.pg-reg .pg-qq {
+  background-position: -36px -4px;
+}
+.pg-reg .weibo {
+  background-position: -4px -4px;
+}
+.pg-reg .douban {
+  background-position: -67px -4px;
+}
+.pg-reg .taobao {
+  background-position: -100px -4px;
+}
+.pg-reg .qweibo {
+  background-position: -131px -4px;
+}
+/*右边的二维码*/
+.modal-right {
+  padding-left: 40px;
+  border-left: 1px solid #ebebeb;
+}
+.modal-right img {
+  margin-bottom: 20px;
+}
+.modal-right p {
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+/*底部注册*/
+.modal-footer {
+  text-align: center;
+}
+.modal-footer a {
+  color: #5678a0;
+}
+.modal-footer a:hover {
+  color: #f14382;
+}
+#errw {
+  margin-bottom: 20px;
+  padding: 0 5px;
+  color: #000;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+}
+#sp1 {
+  font-size: 30px;
+  font-weight: bold;
+}
