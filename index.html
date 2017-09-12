@@ -146,7 +146,7 @@
 				</div>
 				<div id="floor">
 					<!--一楼内容-->
-					<h5><img src="img/index/index_tit1.png"width="100%"/></h5>
+					<h5><img src="img/index/index_tit1.png" width="100%"/></h5>
 					<p>限时团购 | 热门活动</p>
 					<div id="floor1" class="row">
 						<div   class="col-sm-6">
@@ -183,20 +183,14 @@
 					<div id="floor2" class="row">
 						<div   class="col-md-12" style="overflow: hidden;">
 							<div id="wrap">
-								<img src="img/index/g2.jpg" style="left: 100px; " class="left" />
-								<img src="img/index/g3.jpg" style="left: 200px; " class="left" />
-								<img src="img/index/g4.jpg" style="left: 300px; " class="left" />
-								<img src="img/index/g5.jpg" style="left: 400px; " class="middle" />
-								<img src="img/index/g6.jpg" style="left: 500px; " class="right" />
-								<img src="img/index/g5.jpg" style="left: 600px; " class="right" />
-								<img src="img/index/g4.jpg" style="left: 700px; " class="right" />
+								
 							</div>
 						</div>
 					</div>
 					<!--二楼结束-->
 					<!--三楼开始-->
 					<div id="floor3">
-						<h5><img src="img/index/index_tit4.png"width="100%"/></h5>
+						<h5><img src="img/index/index_tit4.png" width="100%"/></h5>
 						<p>真实婚礼 | 婚礼秀 </p>
 						<div   class="row hei">
 							<div id="banner_tabs" class="col-xs-12">
@@ -245,7 +239,7 @@
 					</div>
 					<!--三楼结束-->
 					<!--四楼开始-->
-					<h5><img src="img/index/index_tit3.png"width="100%"/></h5>
+					<h5><img src="img/index/index_tit3.png" width="100%"/></h5>
 					<p>星级酒店 | 特色餐厅</p>
 					<div id="floor4" class="row">
 						<div   class="col-md-12 rea">
@@ -367,7 +361,6 @@
 	<script type="text/javascript">
 		goTop.onclick = function() {
 			var h = document.body.scrollTop;
-			console.log(h);
 			var time = clearInterval();
 			time = setInterval(function() {
 				document.body.scrollTop = h - 100;
@@ -412,16 +405,13 @@
 		})();
 	</script>-->
 	<!--点击图片JS-->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		var owrap = $("#wrap");
 		var oImg = owrap.children("img");
-		var mIndex = 3;
-		console.log(oImg);
-		console.log(oImg.pop());
+		var mIndex = 4;
 		for(var i = 0; i <= oImg.length; i++) {
 			oImg[i].index = i;
 			oImg[i].onclick = function() {
-				// oImg[oImg.length-1]
 				var nIndex = this.index;
 				for(var j = 0; j < oImg.length; j++) {
 					oImg[j].style.left = oImg[j].offsetLeft - 100 * (nIndex - mIndex) + "px";
@@ -436,10 +426,65 @@
 				mIndex = nIndex;
 			}
 		}
+	</script> -->
+	<script type="text/javascript">
+		var html=`<img src="img/index/g2.jpg" style="left: 0;" class="left" />
+					<img src="img/index/g2.jpg" style="left: 100px; " class="left" />
+					<img src="img/index/g3.jpg" style="left: 200px; " class="left" />
+					<img src="img/index/g4.jpg" style="left: 300px; " class="left" />
+					<img src="img/index/g5.jpg" style="left: 400px; " class="middle" />
+					<img src="img/index/g6.jpg" style="left: 500px; " class="right" />
+					<img src="img/index/g5.jpg" style="left: 600px; " class="right" />
+					<img src="img/index/g4.jpg" style="left: 700px; " class="right" />
+					<img src="img/index/g4.jpg" style="left: 800px; " class="right" />
+					<img src="img/index/g4.jpg" style="left: 900px; " class="right" />
+				`;
+			$("#wrap").html(html);	
+			var oImg = $("#wrap img");
+			var mIndex = 4;
+		$("#wrap").on('click','img',function(){
+			var thisElement=$(this);
+			var nIndex = thisElement.index();
+			// var thisClass=thisElement.attr('class');
+			// if (thisClass==='right') {
+				// var firstE=$('#wrap img').first().remove();
+				// $('#wrap').append(firstE);
+			// }else if(thisClass==='left'){
+				// var lastE=$('#wrap img').last().remove();
+				// $('#wrap').prepend(lastE);
+			// }
+			for(var j = 0; j < oImg.length; j++) {
+				oImg[j].style.left = oImg[j].offsetLeft - 100 * (nIndex - mIndex) + "px";
+				if(j < nIndex) {
+					oImg[j].className = "left";
+				} else if(j == nIndex) {
+					oImg[j].className = "middle";
+				} else {
+					oImg[j].className = "right";
+				}
+			}
+			mIndex = nIndex;
+		})
+		// for(var i = 0; i <= oImg.length; i++) {
+		// 	oImg[i].index = i;
+		// 	oImg[i].onclick = function() {
+		// 		var nIndex = this.index;
+		// 		for(var j = 0; j < oImg.length; j++) {
+		// 			oImg[j].style.left = oImg[j].offsetLeft - 100 * (nIndex - mIndex) + "px";
+		// 			if(j < nIndex) {
+		// 				oImg[j].className = "left";
+		// 			} else if(j == nIndex) {
+		// 				oImg[j].className = "middle";
+		// 			} else {
+		// 				oImg[j].className = "right";
+		// 			}
+		// 		}
+		// 		mIndex = nIndex;
+		// 	}
+		// }
 	</script>
 	<script type="text/javascript">
 		var name=sessionStorage.getItem(name);
-			console.log(name);
 	if(name=="null"){
 	}else{
 		$(".login_box").html("<a>欢迎回来"+name+"</a>");

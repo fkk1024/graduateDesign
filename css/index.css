@@ -228,6 +228,7 @@ footer div div ul {
 footer div div ul li {
   float: left;
   padding: 5%;
+  width: 30%;
   font-size: 20px;
   text-align: center;
   padding-top: 5%;
@@ -247,7 +248,7 @@ footer #foot_about ul li {
   float: left;
   padding: 0;
   margin: 0;
-  width: 80px;
+  width: 8.3%;
 }
 footer #foot_about ul li a {
   height: 100px;

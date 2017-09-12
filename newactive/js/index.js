@@ -1,7 +1,7 @@
 //异步请求页头页尾
 //页面加载完成完成事件的回调
 $(function() {
-	$('div#footer').load('php/2_foot.php');
+	$('div#footer').load('php-for-aliyun/foot.php');
 });
 //功能点1：瀑布流
 //设置class为masonry的父元素成彩砖墙
@@ -16,7 +16,7 @@ $('#bt-login').click(function() {
 	//发起异步请求
 	$.ajax({
 		type: "POST",
-		url: "php/3_login.php",
+		url: "php-for-aliyun/login.php",
 		data: data,
 		success: function(txt, msg, xhr) {
 			if(txt == '1') {
@@ -98,10 +98,14 @@ var d;
 (function() {
 	$.ajax({
 		type: 'GET',
-		url: 'php/4_readmore.php',
+		url: 'php-for-aliyun/readmore.php',
 		success: function(data, msg, xhr) {
+			console.log(data);
+			console.log(data[0]);
 			var $m = $("#pubu");
-			d = data;
+			var dj=JSON.parse(data);
+			console.log(dj);
+			d = dj;
 			h(d);
 			$m.html(html);
 			$m.imagesLoaded(function() {
@@ -122,19 +126,19 @@ $('#readMore').click(
 		e.preventDefault();
 		$.ajax({
 			type: 'GET',
-			url: 'php/4_readmore.php',
+			url: 'php-for-aliyun/readmore.php',
 			data: {
 				sta: d.length * l
 			},
 			success: function(data, msg, xhr) {
-				var htm = h(data);
-				console.log(htm);
+				console.log(data[0])
+				var dj=JSON.parse(data);///将返回数据解析成json格式
+				var htm = h(dj);
 				$("#pubu").html(html).imagesLoaded(function(){
 					$("#pubu").masonry("reloadItems").masonry()
 				});
 				l += 1;
-				console.log(data.length);
-				if(data.length < 10) {
+				if(data[0].length < 10) {
 					$(".dt-browser")
 						.html("没有更多数据了...")
 						.css({
